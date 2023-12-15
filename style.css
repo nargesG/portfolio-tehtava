@@ -49,15 +49,57 @@ p {
 footer {
     background-color: black;
     color: gray;
-    text-align: center;
-    height: 3rem;
     vertical-align: middle;
     margin: 1rem;
+    text-align: center;
     
 }
 footer p {
-    font-size: 1rem;
+    
+    font-size: 10px;
     line-height: 3rem;
+}
+footer h2 {
+    color: white;
+    padding: 2rem;
+    
+}
+
+
+/* Form */
+form section {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+form label {
+    display: table-cell;
+    text-align: left;
+    max-width: 10rem;
+    vertical-align: bottom;
+}
+form section > * {
+    flex: 1 1 calc(100% / 2)
+}
+
+form input {
+    flex-grow: 3;
+    margin-bottom: 1rem;
+
+}
+
+form button {
+    color: white;
+    background-color: rgb(247, 104, 9);
+    border: none;
+    border-radius: 5px;
+    line-height: 2rem;
+    padding: 0 1rem;
 }
 .hero-banner{
     font-size: 4rem;
@@ -90,4 +132,7 @@ main section:nth-child(even) .text figure {
 
 .aboutme {
     background-color: antiquewhite;
+}
+.massage {
+    height: 3rem;
 }
