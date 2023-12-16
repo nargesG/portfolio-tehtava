@@ -1,0 +1,21 @@
+.progressbar {
+    background-color: #eee;
+}
+.progressbar .progress {
+    height: inherit;
+    height: 1rem;
+    background-color: orangered;
+
+}
+.skills li:nth-child(1) .progressbar .progress {
+   width:  90%;
+}
+.skills li:nth-child(2) .progressbar .progress {
+    width:  60%;
+ }
+ .skills li:nth-child(3) .progressbar .progress {
+    width:  50%;
+ }
+ .skills li:nth-child(4) .progressbar .progress {
+    width:  70%;
+ }

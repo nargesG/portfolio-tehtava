@@ -6,6 +6,13 @@
     <title>My Protfilio</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="progressbar.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/ea8f009169.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -19,7 +26,7 @@
             <a href="#">About me</a>
           </li>
           <li>
-            <a href="#">Siklls</a>
+            <a href="#">Skills</a>
           </li>
           <li>
             <a href="#">Contact me</a>
@@ -29,15 +36,17 @@
           </li>
         </ul>
       </nav>
-      <p class="hero-banner">Welcome to my Protfolio</p>
     </header>
     <main>
+      <div class="hero-banner">
+        <p>Welcome to my Protfolio</p>
+      </div>
       <section class="link">
         <h2>Projects</h2>
-        <section class="text projects">
+        <div class="text projects">
           <section>
             <figure>
-              <img src="./images/img-1.png" alt="img" />
+              <img src="./images/html-css.webp" alt="HTML5-CSS3" />
             </figure>
             <h3>Lorem ipsum dolor sit amet consectetur</h3>
             <p>HTML, CSS, JavaScript</p>
@@ -45,7 +54,7 @@
           </section>
           <section>
             <figure>
-              <img src="./images/img-1.png" alt="img" />
+              <img src="./images/ux-ui.avif" alt="UX-UI" />
             </figure>
             <h3>Lorem ipsum dolor sit amet consectetur</h3>
             <p>UX design, layouts</p>
@@ -53,20 +62,17 @@
           </section>
           <section>
             <figure>
-              <img src="./images/img-1.png" alt="img" />
+              <img src="./images/react.png" alt="ReactJS" />
             </figure>
             <h3>Lorem ipsum dolor sit amet consectetur</h3>
             <p>ReactJS, NodeJS</p>
             <a href="">See more</a>
           </section>
-        </section>
+        </div>
       </section>
       <section class="link aboutme">
         <h2>About me</h2>
-        <section class="text">
-          <figure>
-            <img src="./images/img-2.jpg" alt="About me" />
-          </figure>
+        <div class="text">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at
             iure distinctio alias perferendis quibusdam error quasi magnam quis,
@@ -79,39 +85,60 @@
             ab maxime vitae provident commodi soluta dolor quia adipisci
             dignissimos possimus consequuntur, harum itaque quas?
           </p>
-        </section>
+          <figure>
+            <img src="./images/img-2.jpg" alt="About me" />
+          </figure>
+        </div>
       </section>
       <section class="link">
         <h2>Skills</h2>
-        <section class="text">
-          <figure>
-            <img src="./images/img-3.avif" alt="Skills" />
-          </figure>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-            aliquam dolores cum, eius odit tempora perspiciatis rem eaque
-            provident saepe maxime maiores delectus accusantium rerum unde neque
-            voluptatem omnis expedita. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Id magnam minus eum temporibus, quis perferendis
-            libero nobis beatae quae nesciunt alias pariatur. Aliquam nulla
-            tempora exercitationem, accusamus aut minus molestiae?
-          </p>
-        </section>
+        <div class="text">
+          <ul class="skills">
+            <li>
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML5</p>
+              <div class="progressbar">
+                <div class="progress"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS3</p>
+              <div class="progressbar">
+                <div class="progress"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-user-group"></i>
+              <p>Teaching</p>
+              <div class="progressbar">
+                <div class="progress"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-certificate"></i>
+              <p>Couching</p>
+              <div class="progressbar">
+                <div class="progress"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
       <form>
         <h2>Contact me</h2>
-        <section>
-          <label for="yourname">Your name</label>
-          <input type="text" />
+        <div class="fields">
+          <label for="name">Your name</label>
+          <input id="name" type="text" />
 
-          <label for="youremail">Your email</label>
-          <input type="email" />
+          <label for="email">Your email</label>
+          <input id="email" type="email" />
 
-          <label for="Massage">Massage to me</label>
-          <input type="text" class="massage" />
-        </section>
+          <label for="message">Massage to me</label>
+          <input id="message" type="text" class="massage" />
+        </div>
         <button>Send Massage</button>
       </form>
       <p>Copyright My Website 2023</p>
