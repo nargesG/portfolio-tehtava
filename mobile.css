@@ -1,4 +1,7 @@
 @media only screen and (max-width: 425px) {
+    nav {
+        flex-direction: column;
+    }
     nav ul {
         flex-direction: column;
         text-align: left;
@@ -39,8 +42,10 @@
         padding: 0;
     }
 
-    .hero-banner p {
-        font-size: 1rem;
+    .hero-banner {
+        padding-block-start: 18rem;
+        padding-block-end: 0;
+        font-size: 1.5rem;
     }
     
     form .fields {
@@ -58,9 +63,18 @@
     .aboutme figure {
         width: fit-content;
     }
+    .gallary {
+        padding-block-end: 2rem;
+    }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
+    .hero-banner {
+        padding-block-start: 8rem;
+        padding-block-end: 5rem;
+        font-size: 2rem;
+    }
+
     .skills {
         height: 24rem;
         flex-wrap: wrap;
@@ -68,8 +82,10 @@
         gap: 1.5rem;
     }
 
-
     form .fields {
         width: 70%;
+    }
+    .gallary {
+        padding-block-end: 3rem;
     }
 }

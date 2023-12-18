@@ -1,0 +1,109 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+header {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.gallary {
+    padding-block-end: 4rem;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+h1 {
+    display: inline;
+    color: gray;
+    font-size: 2.2rem;
+    vertical-align: middle;
+}
+li {
+    text-align: center;
+    padding: 1rem;
+}
+.gallary-grid {
+    display: grid;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 4px 2px;
+    aspect-ratio: 3 / 2;
+
+}
+.gallary-credit {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    color: gray;
+    padding-block-start: 0.5rem;
+}
+
+.gallary-credit a {
+    color: orangered;
+}
+
+.image1 { 
+    background-image: url("./images/gallary/gallary-1.avif");
+    background-size: cover;
+    grid-area: 1 / 1 / 5 / 3 ;
+}
+.image2 {
+    background-image: url("./images/gallary/gallary-2.avif");
+    background-size: cover;
+    grid-area: 1 / 3 / 3 / 5;
+}
+.image3 {
+    background-image: url("./images/gallary/gallary-3.avif");
+    background-size: cover;
+    grid-area: 3 / 3 / 5 / 5;
+}
+.image4 {
+    background-image: url("./images/gallary/gallary-4.avif");
+    background-size: cover;
+    grid-area: 1 / 5 / 6 / 7;
+}
+.image5 {
+    background-image: url("./images/gallary/gallary-5.avif");
+    background-size: cover;
+    grid-area: 5 / 1 / 6 / 2;
+}
+.image6 {
+    background-image: url("./images/gallary/gallary-6.avif");
+    background-size: cover;
+    grid-area: 6 / 1 / 7 / 2;
+}
+.image7 {
+    background-image: url("./images/gallary/gallary-7.avif");
+    background-size: cover;
+    grid-area: 7 / 1 / 8 / 2;
+}
+.image8 {
+    background-image: url("./images/gallary/gallary-8.avif");
+    background-size: cover;
+    grid-area: 5 / 2 / 8 / 5;
+}
+.image9 {
+    background-image: url("./images/gallary/gallary-9.avif");
+    background-size: cover;
+    grid-area: 6 / 5 / 8 / 7;
+}
